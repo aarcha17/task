@@ -1,0 +1,291 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Nunito', sans-serif;  
+    background-color: #ffffff; 
+    height: 100vh;  
+    margin: 0;
+    display: flex;
+    flex-direction: column;  
+    justify-content: flex-start;  
+    padding: 20px 20px 20px 60px;  
+}
+
+/* Logo styling */
+.logo {
+    width: 50px;      
+    height: auto;     
+    margin-right: 5px; 
+}
+
+/* Top Section styles */
+.top-section {
+    display: flex;  
+    align-items: center;
+    justify-content: flex-start;  
+    width: 100%;  
+    margin-bottom: 30px;  
+}
+
+.hello-world {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-right: 40px; 
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;  
+}
+
+.menu-list li {
+    font-size: 18px;
+}
+
+.menu-list li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+/* Content wrapper */
+.content {
+    max-width: 600px;  
+    flex-grow: 1; 
+}
+
+/* Title styles */
+.title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Button container */
+.button-container {
+    display: inline-flex;  
+    align-items: center;   
+    margin-bottom: 50px;
+}
+.button-text {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Button styles */
+.book-btn {
+    background-color: #2F584E;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+.book-btn:hover {
+    background-color: #2F584E;
+}
+.para {
+    font-size: 12px;
+}
+/* "See Journey" image */
+.journey-image {
+    margin-left: 20px;
+    width: 100px;     
+    height: auto;      
+    cursor: pointer;  
+}
+
+/* Footer styles */
+.footer {
+    background-color: #FF9257;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 20px;
+    text-align: center;
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    width: calc(100% - 30vw); 
+    padding: 20px 20px 20px 58px;
+    margin: 0; 
+}
+
+
+/* Footer */
+.footer-item {
+    color: #fff;
+    position: relative; 
+    padding: 10px; 
+}
+
+.footer-item:not(:last-child)::after {
+    content: ""; 
+    position: absolute; 
+    right: 0; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    width: 4px; 
+    height: 90%; 
+    background-color: #F7BE2C; 
+}
+
+.footer-item:first-child::before {
+    content: ""; 
+    position: absolute; 
+    left: 0; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    width: 4px; 
+    height: 90%; 
+    background-color: #F7BE2C; 
+}
+
+.footer-number {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-text {
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Image container on the right side */
+.image-container {
+    position: fixed;      
+    right: 0;             
+    top: 0;              
+    width: 30vw;          
+    height: 100%;         
+    overflow-y: auto;     
+    z-index: 10;          
+    background-color: #F1F6FE;
+    display: flex;        
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center; 
+}
+
+/* Main image style */
+.main-image {
+    width: 100%;         
+    height: 100%;        
+    object-fit: cover;   
+    margin-bottom: 20px; 
+    z-index: 15; 
+    position: absolute;        
+}
+
+/* Inner images container */
+.inner-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;          
+    width: 100%;        
+    height: 100%;       
+    padding: 10px;
+    z-index: 15;   
+    position: absolute;     
+}
+
+/* Inner image style */
+.inner-image {
+    width: 100%;         
+    height: auto;       
+    object-fit: cover;  
+}
+/* See Journey */
+.journey {
+    display: flex; 
+    align-items: center; 
+    margin-left: 20px; 
+    cursor: pointer; 
+}
+
+.journey-image {
+    width: 38px; 
+    height: auto; 
+    margin-right: 10px; 
+}
+
+.journey-text {
+    font-size: 16px; 
+    font-weight: 600;
+    color: #333; 
+}
+/* Stats container */
+.stats-container {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+/* Container for the student*/
+.students-info {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    margin-right: 50px;
+}
+
+.students-count {
+    font-size: 30px;
+    font-weight: 400;
+    margin-right: 18px;
+}
+
+.students-text {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+    line-height: 1.2;
+}
+
+/* Container for student images */
+.student-images {
+    display: flex; 
+    align-items: center;
+    position: relative;
+}
+
+/* Student image styles */
+.student-image {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    margin-left: -22px; 
+}
+
+.student-images img:nth-child(2) {
+    z-index: 2;
+}
+
+.student-images img:nth-child(3) {
+    z-index: 3;
+}
